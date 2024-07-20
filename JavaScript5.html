@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // Question 10
+var scores=[320,230,480,120];
+document.write("Scores of Students: "+ scores)
+document.write("<br>")
+scores.sort();
+document.write("Ordered Scores of Students: "+scores);
+// Question 11
+var cities=["Karachi","Lahore","Islamabad","Quetta","Peshawar"];
+var selectedcities=[];
+document.write("<h1>Cities list</h1>");
+document.write(cities);
+selectedcities=cities.slice(2,4);
+document.write("<h2>Selected cities</h2>");
+document.write(selectedcities);
+
+// Question 12
+var arr = ["This ",  "is "," my " ,  "cat"];
+document.write("<h1>Array</h1>")
+document.write(arr);
+var string=arr.join("");
+document.write("<h1>String</h1>")
+document.write(string);
+
+// Question 13
+var devices=[];
+devices[0]="computer";
+devices[1]="mouse";
+devices[2]="keyword";
+devices[3]="printers";
+document.write("<h1>Devices</h1>");
+document.write(devices);
+document.write("<h2>Out</h2>");
+document.write(devices[0]);
+document.write("<h2>Out</h2>");
+document.write(devices[1]);
+document.write("<h2>Out</h2>");
+document.write(devices[2]);
+document.write("<h2>Out</h2>");
+document.write(devices[3]);
+
+// Question 14
+var devices=[];
+devices[0]="computer";
+devices[1]="mouse";
+devices[2]="keyword";
+devices[3]="printers";
+document.write("<h1>Devices</h1>");
+document.write(devices);
+document.write("<h2>Out</h2>");
+document.write(devices[3]);
+document.write("<h2>Out</h2>");
+document.write(devices[2]);
+document.write("<h2>Out</h2>");
+document.write(devices[1]);
+document.write("<h2>Out</h2>");
+document.write(devices[0]);
+
+// Question 15
+document.write("<h1>Menu options</h1>");
+var manufacturers = ["Apple", "Samsung", "Motorola", "Nokia", "Sony", "Haier"];
+var html = '<select id="manufacturerSelect">\n';
+manufacturers.forEach(manufacturer => {
+    html += `\t<option value="${manufacturer}">${manufacturer}</option>\n`;
+});
+html += '</select>\n';
+document.write(html);
+
+// Chapter 17-20
+// Question 1
+var multiDimensionalArray=[];
+// Question 2
+// document.write("<h1>MultiDiensional Array</h1>");
+// multiDimensionalArray=[
+//     [0,1,2,3],
+//     [1,0,1,2],
+//     [2,1,0,1]
+// ];
+// document.write(multiDimensionalArray[0][0][0]);
+// document.write(multiDimensionalArray[1][1][1]);
+// document.write(multiDimensionalArray[2][2][2]);
+// document.write(multiDimensionalArray[3][3][3]);
+
+// console.log(multiDimensionalArray)
+
+
+
+// Question 3
+
+document.write("<h1>Loop</h1>");
+for(var numbers=1; numbers<=10;numbers++){
+    document.write(numbers,"<br>");
+}
+
+// Question 4
+document.write("<h1>Multiplication table</h1>");
+var multiplicationNumber=prompt("Enter a number to show its multiplication table");
+var length=prompt("Enter a length for multiplication table");
+document.write("Multiplication table of "+multiplicationNumber+" of lenght "+length);
+document.write("<br>");
+for(var i=1;i<=length;i++){
+    var result=multiplicationNumber*i;
+    document.write(multiplicationNumber+"*"+i+"= "+result);
+    document.write("<br>");
+}
+// Question 5
+document.write("<h1>Fruits</h1>")
+var fruit=["apple","banana","mango","orange","strawberry"];
+for(var j=0;j<=4;j++){
+    document.write(fruit[j]);
+    document.write("<br>");
+}
+for(var index=0;index<=4;index++){
+    document.write("Element at index "+index+" is "+fruit[index]);
+    document.write("<br>"); 
+}
+// Question 6
+document.write("<h1>Counting</h1>");
+for(var counting=1; counting<=15;counting++){
+    document.write(counting+",");
+}
+document.write("<h1>Reverse Counting</h1>");
+for(var reverse=10; reverse>=1;reverse--){
+    document.write(reverse+",");
+}
+document.write("<h1>Even Numbers</h1>");
+for(var even=0; even<=20;even++){
+    if(even%2===0){
+        document.write(even+",")
+    }
+}
+document.write("<h1>Odd Numbers</h1>");
+for(var odd=1; odd<=20;odd++){
+    if(odd%2!=0){
+        document.write(odd+",")
+    }
+}
+document.write("<h1>Series</h1>");
+for(var series=2; series<=20;series++){
+    if(series%2===0){
+        document.write(series+"k,")
+    }
+}
+// Question 7
+var A = ["cake", "apple pie", "cookie", "chips", "patties"];
+
+var userInput = prompt("Enter an item to search:");
+
+    var lowercaseInput = userInput.toLowerCase();
+    var found = false;
+    for (let i = 0; i < A.length; i++) {
+        if (A[i].toLowerCase() === lowercaseInput) {
+            found = true;
+            break;
+        }
+    }
+    if (found) {
+        alert("Yes, "+userInput+" is found in the list");
+    } else {
+        alert("No, "+userInput+ "is not found in the list");
+    }
+
+
+// Question 8
+document.write("<h1>Array</h1>")
+var A=[24, 53, 78, 91, 12];
+var largest=A[0];
+for(var i=1 ; i<A.length ; i++){
+    if(A[i] > largest){
+
+        largest= A[i];
+    }
+}
+document.write("Array Items:[24,53,78,91,12]");
+document.write("<br>The largest Number is:"+largest);
+// Question 9
+ A=[24, 53, 78, 91, 12];
+var smallest=A[0];
+for(var i=1 ; i<A.length ; i++){
+    if(A[i] < smallest){
+
+        smallest= A[i];
+    }
+}
+document.write("<br>Array Items:[24,53,78,91,12]");
+document.write("<br>The largest Number is:"+smallest);
+
+// Question 10
+document.write("<h1>Multiples of 5</h1>")
+var multiple=5
+for( var i=1 ; i<=100 ; i++ ){
+    if(multiple*i<=100){   
+    document.write(multiple*i+",");
+}  
+}
+
+
+
+    </script>
+</body>
+</html>

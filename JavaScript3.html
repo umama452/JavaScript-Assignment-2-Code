@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+    // Chapter 6-9
+    // Question 1
+    document.write("Result:");
+    var a=10;
+    document.write("<br>The value of a is=", a);
+    document.write("<br>.....................................");
+    document.write("<br>");
+    document.write("<br>The value of ++a is=",++a);
+    document.write("<br>Now the value of a is=",a);
+    document.write("<br>")
+    document.write("<br>The value of a++ is=",a++);
+    document.write("<br>Now the value of a is=",a);
+    document.write("<br>");
+    document.write("<br>The value of --a is=",--a);
+    document.write("<br>Now the value of a is=",a);
+    document.write("<br>");
+    document.write("<br>The value of a-- is=",a--);
+    document.write("<br>Now the value of a is=",a);
+
+
+    document.write("<br>")
+    // Question 2
+    var a=2;
+    var b=1;
+    --a;         
+    // a=1
+     
+    (a) - (--b);      
+    
+   (a )- (b) + (++b);
+     
+var result= a - (--b) + (++b) + (b--);      
+document.write("<br>a=",a);
+document.write("<br>b=",b);
+document.write("<br>Result=",result);
+
+// Question 3
+var name=prompt("Welcome to our page tell me what's your name");
+document.write("<br>")
+
+// Question 5
+var num="Enter a number";
+var defaultTable=5
+var table=prompt(num,defaultTable);
+ answer=table*1;
+document.write("<br>",table,"*1=",answer);
+answer=table*2;
+document.write("<br>",table,"*2=",answer);
+answer=table*3;
+document.write("<br>",table,"*3=",answer);
+answer=table*4;
+document.write("<br>",table,"*4=",answer);
+answer=table*5;
+document.write("<br>",table,"*5=",answer);
+answer=table*6;
+document.write("<br>",table,"*6=",answer);
+answer=table*7;
+document.write("<br>",table,"*7=",answer);
+answer=table*8;
+document.write("<br>",table,"*8=",answer);
+answer=table*9;
+document.write("<br>",table,"*9=",answer);
+answer=table*10;
+document.write("<br>",table,"*10=",answer);
+
+// Question 6
+var subject1Name=prompt("Enter subject 1 name");
+var subject2Name=prompt("Enter subject 2 name");
+var subject3Name=prompt("Enter subject 3 name");
+var totalMarks=100;
+var subject1Marks=Number(prompt("Enter a marks of subject 1"));
+var subject2Marks=Number(prompt("Enter a marks of subject 2"));
+var subject3Marks=Number(prompt("Enter a marks of subject 3"));
+var percentage1=(subject1Marks/totalMarks)*100
+var percentage2=(subject2Marks/totalMarks)*100
+var percentage3=(subject3Marks/totalMarks)*100
+var sum=subject1Marks+subject2Marks+subject3Marks;
+var totalpercentage=(sum/300)*100;
+document.write("<table border='1px'>")
+document.write("<tr><td>Subject</td> <td>Total Marks</td> <td> Obtained Marks</td> <td>Percentage</td></tr>")
+document.write("<tr><td>"+subject1Name+"</td>"+"<td>"+totalMarks+"</td>"+"<td>"+subject1Marks+"</td>"+"<td>"+percentage1+"%</td></tr>")
+document.write("<tr><td>"+subject2Name+"</td>"+"<td>"+totalMarks+"</td>"+"<td>"+subject2Marks+"</td>"+"<td>"+percentage2+"%</td></tr>")
+document.write("<tr><td>"+subject3Name+"</td>"+"<td>"+totalMarks+"</td>"+"<td>"+subject3Marks+"</td>"+"<td>"+percentage3+"%</td></tr>")
+document.write("<tr><td></td>"+"<td>300</td>"+"<td>"+sum+"</td>"+"<td>"+totalpercentage+"%</td></tr>")
+document.write("</table>")
+
+
+
+
+
+
+
+// Chapter 9-11
+// Question 1
+var cityName=prompt("Enter your city name");
+cityName=cityName.toLowerCase();
+if(cityName==="karachi"){
+    alert("Welcome to city of lights");
+}
+
+
+// Question 2
+var gender=prompt("Enter your Gender");
+gender=gender.toLowerCase();
+if(gender==="male"){
+    alert("Good Morning Sir");
+}
+ if(gender==="female"){
+    alert("Good Morning Ma'am");
+}
+
+
+// Question 3
+var trafficSignalColor=prompt("Enter one color of traffic signal");
+trafficSignalColor=trafficSignalColor.toLowerCase();
+if(trafficSignalColor==="red"){
+    alert("Must Stop");
+}  
+else if(trafficSignalColor==="yellow"){
+    alert("Ready to move");
+}                  
+else if(trafficSignalColor==="green"){
+    alert("Move Now");
+}
+else{
+    alert("Enter a color from green,red,yellow");
+}
+
+// Question 4
+var remainingFuel=prompt("Enter an amount of fuel in your car");
+if(remainingFuel<0.25){
+ alert("Please refill the fuel in your car")
+}
+
+// Question 5
+
+
+// Question 6
+var marks1=Number(prompt("Enter the marks of subject 1"));
+var marks2=Number(prompt("Enter the marks of subject 2"));
+var marks3=Number(prompt("Enter the marks of subject 3"));
+var totalMarks=300;
+var obtainedMarks=marks1+marks2+marks3;
+var percentage=(obtainedMarks/totalMarks)*100;
+document.write("<h1>MARKSHEET</h1>");
+document.write("<br>");
+document.write("Total Marks:",totalMarks);
+document.write("<br>Marks Obtained:",obtainedMarks);
+document.write("<br>Percentage:",percentage);
+if(percentage>=80){
+    document.write("<br>Grade:A-one");
+    document.write("<br>Remarks:Excellent");
+}
+else if(percentage>70){
+    document.write("<br>Grade:A");
+    document.write("<br>Remarks:Good");
+}
+else if(percentage>=60){
+    document.write("<br>Grade:B");
+    document.write("<br>Remarks:You need to improve");
+}
+else{
+    document.write("<br>Grade:Fail");
+    document.write("<br>Remarks:Sorry");
+}
+//  Question 7
+
+var secretNumber=6;
+var guessNumber=Number(prompt("Guess the Secret Number"));
+ if(guessNumber===secretNumber){
+    alert("Bingo!Correct Answer")
+ }
+else if(guessNumber+1===secretNumber){
+    alert("Close enough to correct answer")
+}
+
+
+//  Question 8
+
+number=Number(prompt("Enter any number to know if this number is divisible by 3"));
+if(number%3===0){
+    alert("The number is divisible by 3");
+}
+else{
+    alert("this number is not divisible by 3");
+}
+                       
+// Question 9
+var number1=Number(prompt("Enter any number and let you know whther this number is even or odd"));
+if(number1%2===0){
+    alert("Number is Even");
+}
+else{
+    alert("Number is odd");
+}
+
+// Question 10
+
+var tempurature=Number(prompt("Enter a tempurature in your city"));
+if(tempurature>40){
+    alert("It's too hot outside.")
+}
+else if(temperature>30){
+    alert("The Weather today is Normal.")
+}
+else if(tempurature>20){
+    alert("Today's Weather is cool.")
+}
+else if(tempurature>10){
+    alert("Today's Weather is cool.")
+}
+else{
+    alert("Nothing")
+}
+
+// Question 11
+document.write("<h1>CALCULATOR</h1>");
+var num1=Number(prompt("Enter first number"));
+var num2=Number(prompt("Enter second number"));
+var operator=prompt("Enter an operator like +,-,/,%");
+if(operator==="+"){
+    var ans=num1+num2;
+    document.write(num1,"+",num2,"=",ans );
+}
+else if(operator==="-"){
+    ans=num1-num2;
+    document.write(num1,"-",num2,"=",ans);
+}
+else if(operator==="*"){
+    ans=num1*num2;
+    document.write(num1,"*",num2,"=",ans);
+}
+else if(operator==="/"){
+    ans=num1/num2;
+    document.write(num1,"/",num2,"=",ans);
+}
+else if(operator==="%"){
+    if(num2===0){
+        document.write("Modulus by zero is undefined");
+    }
+    else{
+    ans=num1%num2;
+    document.write(num1,"%",num2,"=",ans);
+    }
+}
+else{
+    doocument.write("Enter correct operator");
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</script>
+</body>
+</html>
